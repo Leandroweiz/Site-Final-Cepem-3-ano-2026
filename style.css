@@ -1,0 +1,169 @@
+:root {
+    --bg-color: #0a0a12;
+    --card-bg: rgba(20, 20, 35, 0.75);
+    --primary-neon: #00f3ff;
+    --secondary-neon: #bc13fe;
+    --text-color: #e0e6ed;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 20px;
+    background-image: radial-gradient(circle at 50% 10%, rgba(0, 243, 255, 0.08), transparent 40%);
+}
+
+/* Cabeçalho */
+.cyber-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: var(--card-bg);
+    border: 1px solid var(--primary-neon);
+    box-shadow: 0 0 15px rgba(0, 243, 255, 0.3);
+    border-radius: 12px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 10px var(--primary-neon);
+}
+
+.logo span {
+    color: var(--secondary-neon);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--primary-neon);
+    text-shadow: 0 0 8px var(--primary-neon);
+}
+
+/* Containers com efeito Neon */
+.cyber-card {
+    background: var(--card-bg);
+    border: 1px solid rgba(188, 19, 254, 0.4);
+    box-shadow: 0 0 20px rgba(188, 19, 254, 0.15);
+    backdrop-filter: blur(8px);
+    border-radius: 16px;
+    padding: 25px;
+    margin-bottom: 35px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.cyber-card:hover {
+    border-color: var(--primary-neon);
+    transform: translateY(-3px);
+}
+
+h2 {
+    color: var(--primary-neon);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 8px var(--primary-neon);
+}
+
+/* Avatar e Vídeo */
+.avatar-container {
+    max-width: 640px;
+    margin: 0 auto 15px auto;
+    border: 2px solid var(--secondary-neon);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(188, 19, 254, 0.4);
+}
+
+.avatar-container video {
+    width: 100%;
+    display: block;
+}
+
+/* Galeria de Imagens */
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.img-box {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 243, 255, 0.3);
+    position: relative;
+}
+
+.img-box img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.img-box:hover img {
+    transform: scale(1.08);
+}
+
+/* Elementos Embarcados (iFrames) */
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Proporção 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid var(--primary-neon);
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* Ajustes de Responsividade para Celulares */
+@media (max-width: 768px) {
+    .cyber-header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

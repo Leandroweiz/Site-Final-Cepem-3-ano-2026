@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colégio Estadual Padre Eduardo Michelis - Portal Futurista</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho Futurista -->
+    <header class="cyber-header">
+        <div class="logo">CEPEM <span>3.0</span></div>
+        <nav>
+            <ul>
+                <li><a href="#avatar">Apresentação</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#game">Scratch Zone</a></li>
+                <li><a href="#planilha">Dados / Planilha</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção do Avatar Falante -->
+    <section id="avatar" class="cyber-card hero-section">
+        <h2>Bem-vindo ao Portal Interativo</h2>
+        <div class="avatar-container">
+            <!-- Insira o vídeo gerado no Adobe Express com áudio do NotebookLM -->
+            <video id="avatarVideo" controls poster="img/foto1.jpg">
+                <source src="Video Cepem.mp4" type="video/mp4">
+                Seu navegador não suporta reprodução de vídeo.
+            </video>
+        </div>
+        <p class="cyber-text">Clique no play para ouvir a mensagem de boas-vindas do nosso avatar IA.</p>
+    </section>
+
+    <!-- Seção de Galeria de Fotos -->
+    <section id="galeria" class="cyber-card">
+        <h2>Galeria de Projetos & Eventos</h2>
+        <div class="grid-galeria">
+            <div class="img-box"><img src="foto1.jpg" alt="Foto 1 do Colégio"></div>
+            <div class="img-box"><img src="foto2.jpeg" alt="Foto 2 do Colégio"></div>
+            <div class="img-box"><img src="foto3.jpg" alt="Foto 3 do Colégio"></div>
+            <div class="img-box"><img src="foto4.jpg" alt="Foto 4 do Colégio"></div>
+        </div>
+    </section>
+
+    <!-- Seção do Jogo no Scratch -->
+    <section id="game" class="cyber-card">
+        <h2>Espaço de Jogos - Scratch</h2>
+        <div class="iframe-container">
+            <!-- Substitua o ID SEU_PROJETO_SCRATCH pelo ID real do projeto publicado -->
+            <iframe src="https://scratch.mit.edu/projects/712542232/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe></iframe>
+        </div>
+    <!-- Seção da Planilha do Google -->
+     <div>
+    <section id="planilha" class="cyber-card">
+        <h2>Planilha do Google</h2>
+        <div class="iframe-container">
+            <!-- Substitua o Link abaixo pelo link de incorporação da sua Planilha (Arquivo > Compartilhar > Publicar na Web) -->
+            <iframe src="https://docs.google.com/spreadsheets/d/1vo9t0bUEyWVRU-RKlgAT5n8w4L9a_VtfeyYagTCyCzE/edit?usp=sharing"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Colégio Estadual Padre Eduardo Michelis - Desenvolvido por Alunos</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
